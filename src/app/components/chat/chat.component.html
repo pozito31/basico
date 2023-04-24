@@ -1,1 +1,13 @@
-<p>chat works!</p>
+<h1>Mensajes</h1>
+<hr />
+<form (ngSubmit)="enviar()">
+  <input
+    type="text"
+    [(ngModel)]="texto"
+    class="form-control"
+    name="texto"
+    placeholder="Mensaje..."
+    autofocus
+    autocomplete="off"
+  />
+</form>
